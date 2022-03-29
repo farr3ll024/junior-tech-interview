@@ -4,6 +4,6 @@ const fetchPatients = async () => {
 };
 
 const fetchPatient = async (patientId) => {
-    const response = await axios.get(`https://ti-patient-service.azurewebsites.net/patients/${patientId}`);
+    const response = await axios.get(`https://ti-patient-service.azurewebsites.net/patient/${patientId}`);
     return response?.data;
 };
